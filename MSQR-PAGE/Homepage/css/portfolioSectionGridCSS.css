@@ -1,0 +1,108 @@
+/* Portfolio Section Grid Template */
+.h2Portfolio {
+    grid-column: 2;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 32px;
+    color: #ebebeb;
+}
+
+.projectsContainer {
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "PIPEX So_Long Kokoro";
+    place-items: center;
+    margin-top: 50px;
+}
+
+    .projectTitle {
+        color: #ebebeb;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+    .projectSubtitle {
+        color: #ebebeb;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-style: italic;
+        margin-bottom: 0;
+    }
+
+    .projectTheme {
+        color: #ebebeb;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+    .projectTechs {
+        color: #ebebeb;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 15px;
+    }
+
+.moreProjectsButton {
+    place-self: center;
+    background-color: transparent;
+    border-color: #EA1888;
+    border-style: solid;
+    border-width: 3px;
+    color: #ebebeb;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.moreProjectsButton:hover {
+    background-color: #EA1888;
+    border-color: #EA1888;
+    border-style: solid;
+    border-width: 3px;
+    color: #ebebeb;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.methodologySection {
+    background-color: #373737;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 1fr 1fr 15%;
+    grid-template-areas: ". Investigacion Prototipado Desarrollo Lanzamiento .";
+    place-items: center;
+    margin-top: 3%;
+}
+
+    .numPhase {
+        color: #ebebeb;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 48px;
+        margin-bottom: 0;
+    }
+
+    .pPhase {
+        color: #ebebeb;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        margin-top: 1%;
+        margin-bottom: 0;
+        letter-spacing: 3px;
+    }
+
+    .line {
+        color: #EA1888;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 32px;
+        font-weight: bold;
+        margin-top: 1%;
+    }

@@ -1,0 +1,103 @@
+/* "Formación" Section Grid Template */
+.formacionContainer {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "PIPEX So_Long Kokoro";
+    place-items: center;
+    margin-top: 50px;
+}
+
+    .formacionPlace {
+        color: #ebebeb;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+    .formacionTime {
+        color: #ebebeb;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-style: italic;
+        margin-bottom: 0;
+    }
+
+    .formacionName {
+        color: #ebebeb;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+.sobreMiSkillsContainer {
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-column: 1fr 1fr;
+    place-items: center;
+    margin-top: 8%;
+}
+
+    .h3SobreMiSkills {
+        grid-column: 1;
+        font-size: 36px;
+        color: #ebebeb;
+        margin-top: 0;
+    }
+
+    .skillProgressBarContainer {
+        grid-column: 2;
+        display: grid;
+        grid-template-rows: repeat(12, auto);
+    }
+
+        progress[value] {
+            /* Reset the default appearance */
+            -webkit-appearance: none; /* For Webkit Browsers (G.Chrome) */
+            appearance: none;
+            border: none; /* For Firefox */
+        
+            width: 450px;
+            height: 15px;
+        }
+
+        /* Rules for Webkit Browsers (G.Chrome) */
+        progress[value]::-webkit-progress-bar {
+            /* Roles for the background bar */
+            background-color: #550039;
+            border-radius: 0px;
+        }
+
+        progress[value]::-webkit-progress-value {
+            /* Rules for the value bar */
+            background-color: #EA1888;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        /* Rules for Firefox */
+        progress {
+            /* Rules for the background bar */
+            background-color: #550039;
+        }
+
+        progress[value]::-moz-progress-bar {
+            /* Rules for the value bar */
+            background: #EA1888;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            border: 0;
+        }
+
+        .progressBarLabels {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            color: #ebebeb;
+            text-align: end;
+            margin-top: 1%;
+            margin-bottom: 3%;
+        }

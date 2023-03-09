@@ -1,0 +1,39 @@
+/* "Experiencia" Section Grid Template */
+.experienceContainer {
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "PIPEX So_Long Kokoro";
+    place-items: center;
+    margin-top: 50px;
+}
+    
+    .expTitle {
+        color: #ebebeb;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    
+    .expTime {
+        color: #ebebeb;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-style: italic;
+        margin-bottom: 0;
+    }
+    
+    .expPosition {
+        color: #ebebeb;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    
+    .expTheme {
+        color: #ebebeb;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 15px;
+    }

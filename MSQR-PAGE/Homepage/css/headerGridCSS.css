@@ -1,0 +1,111 @@
+/* OverHeader Grid Template */
+.overHeaderContainer {
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "contactInfo language";
+}
+
+    .emailOverHeader {
+        grid-column: 1;
+        place-self: center left;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        color: #ebebeb;
+    }
+
+    .tlfOverHeader {
+        grid-column: 2;
+        place-self: center right;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        color: #ebebeb;
+    }
+
+    .overHeaderLinks {
+        text-decoration: none;
+        color: #ebebeb;
+        vertical-align: middle;
+    }
+
+        .overHeaderLinks:hover {
+            color: #EA1888;
+        }
+
+/* Header Grid Template */
+.headerContainer {
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "logo navMenu";
+}
+
+    .headerLogoItem {
+        grid-column: 1;
+        width: 70%;
+    }
+
+    /* Navigation Bar Grid Template and Style Rules */
+    .headerNavBar {
+        display: grid;
+        grid-column: 2;
+        grid-template-columns: 65% 20% 15%;
+        grid-template-rows: auto;
+        grid-template-areas: "sobreMi portfolio contactButton";
+    }
+
+        .sobreMiLinkSection {
+            grid-column: 1;
+            place-self: center right;
+        }
+
+            .sobreMiLink {
+                color: #ebebeb;
+                font-family: 'JetBrains Mono', monospace;
+                text-decoration: none;
+                font-size: 16px;
+            }
+
+                .sobreMiLink:hover {
+                    color:#EA1888;
+                }
+
+        .portfolioLinkSection {
+            grid-column: 2;
+            place-self: center;
+        }
+
+            .portfolioLink {
+                color: #ebebeb;
+                font-family: 'JetBrains Mono', monospace;
+                text-decoration: none;
+                font-size: 16px;
+            }
+
+                    .portfolioLink:hover {
+                        color:#EA1888;
+                    }
+
+        .conntactButtonSection {
+            grid-column: 3;
+            place-self: center right;
+        }
+
+            .contactButton {
+                background-color: transparent;
+                border-color: #EA1888;
+                border-style: solid;
+                border-width: 3px;
+                color: #ebebeb;
+                font-family: 'JetBrains Mono', monospace;
+                font-size: 16px;
+                text-decoration: none;
+                text-align: center;
+                padding: 15px 0px;
+            }
+
+                .contactButton:hover {
+                    background-color: #EA1888;
+                }

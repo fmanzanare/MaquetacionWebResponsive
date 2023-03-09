@@ -1,0 +1,26 @@
+/* Hero Section Grid Template */
+.heroSectionContainer {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: auto auto auto;
+}
+
+    .h2HeroSection {
+        grid-column: 2;
+        grid-row: 1;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 36px;
+        font-weight: normal;
+        color: #EBEBEB;
+        place-self: center;
+    }
+
+    .pHeroSection {
+        grid-column: 2;
+        grid-row: 3;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        color: #EBEBEB;
+        margin-top: 3%;
+    }

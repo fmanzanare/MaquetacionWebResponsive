@@ -1,0 +1,165 @@
+/* The indent shows the father and son nodes that are applied by the CSS */
+
+/* "Sobre Mí" - Content Grid Template */
+.sobreMiContainer {
+    display: grid;
+    grid-template-columns: 30% 1fr 30%;
+    grid-template-rows: auto;
+    grid-template-areas: ". content .";
+}
+
+    .h2SobreMi {
+        grid-column: 2;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 32px;
+        color: #ebebeb;
+    }
+
+    .imgSobreMi {
+        grid-column: 2;
+        place-self: center;
+    }
+
+    .pSobreMi {
+        grid-column: 2;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        line-height: 22px;
+        color: #ebebeb;
+        place-self: center;
+    }
+
+    .doubleButtonContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "button1 button2";
+        grid-column: 2;
+    }
+
+        .buttonMiHistoria {
+            grid-column: 1;
+            place-self: center;
+            background-color: transparent;
+            border-color: #EA1888;
+            border-style: solid;
+            border-width: 3px;
+            color: #ebebeb;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px 0px;
+        }
+
+        .buttonMiHistoria:hover {
+            grid-column: 1;
+            place-self: center;
+            background-color: transparent;
+            border-color: #550039;
+            border-style: solid;
+            border-width: 3px;
+            color: #ebebeb;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px 0px;
+        }
+
+        .buttonBackground {
+            grid-column: 2;
+            background-color: #EA1888;
+            border-color: #EA1888;
+            border-style: solid;
+            border-width: 3px;
+            color: #ebebeb;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px 0px;
+        }
+
+        .buttonBackground:hover {
+            grid-column: 2;
+            background-color: #550039;
+            border-color: #550039;
+            border-style: solid;
+            border-width: 3px;
+            color: #ebebeb;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px 0px;
+        }
+
+/* Radial Progress Bar */
+.progressBarContainer {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: auto;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    place-items: center;
+}
+
+    .circle-wrap {
+        width: 240px;
+        height: 240px;
+        background: #550039;
+        border-radius: 50%;
+        border: 0px;
+    }
+
+        .circle-wrap .circle .mask,
+        .circle-wrap .circle .fill {
+            width: 240px;
+            height: 240px;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .mask .fill {
+            clip: rect(0px, 120px, 240px, 0px);
+            background-color: #ea1888;
+        }
+
+        .circle-wrap .circle .mask {
+            clip: rect(0px, 240px, 240px, 120px);
+        }
+
+        .mask.full,
+        .circle .fill {
+            animation: fill ease-in-out 3s;
+            transform: rotate(var(--value));
+        }
+
+        @keyframes fill {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(var(--value));
+            }
+        }
+
+        .circle-wrap .inside-circle {
+            width: 195px;
+            height: 195px;
+            border-radius: 50%;
+            background: #111113;
+            line-height: 190px;
+            text-align: center;
+            font-family: 'JetBrains Mono', monospace;
+            margin-top: 22px;
+            margin-left: 22px;
+            color: #EBEBEB;
+            position: absolute;
+            font-weight: 500;
+            font-size: 25px;
+        }

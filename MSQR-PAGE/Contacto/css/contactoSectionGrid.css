@@ -1,0 +1,86 @@
+/* Contacto Page Section Grid Template */
+.contactoSectionContainer {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0;
+    margin-top: 3%;
+}
+
+    .contactoLeftItemsContainer {
+        grid-column: 1;
+        display: grid;
+        grid-template-rows: auto auto 1fr;
+        place-items: start left;
+        padding-right: 5%;
+        margin-bottom: 0
+    }
+
+        .h2ContactoSection {
+            grid-row: 1;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 40px;
+            color: #ebebeb;
+            font-weight: normal;
+        }
+
+        .pContactoSection {
+            grid-row: 2;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            color: #ebebeb;
+        }
+    
+    .contactoSectionFormContainer {
+        grid-column: 2;
+        display: grid;
+        grid-template-rows: repeat(11, auto);
+        margin-top: 3%;
+        padding-left: 10%;
+        margin-bottom: 0;
+    }
+
+        .pLabelForm {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            color: #ebebeb;
+            margin-bottom: 0;
+            margin-top: 5%;
+        }
+
+        .inputFormBox {
+            background-color: #767676;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            font-size: 20px;
+            border-style: none;
+            margin-top: 0;
+        }
+
+        .submitFormButton {
+            margin-top: 5%;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ebebeb;
+            border-color: #EA1888;
+            border-width: 3px;
+            border-style: solid;
+            background-color: #EA1888;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+    
+        .submitFormButton:hover {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ebebeb;
+            border-color: #EA1888;
+            background-color: transparent;
+            border-width: 3px;
+            border-style: solid;
+        }
+

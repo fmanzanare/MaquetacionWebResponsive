@@ -1,0 +1,13 @@
+
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Iconos */
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 100,
+    'GRAD' 0,
+    'opsz' 48;
+    color: #EA1888;
+}

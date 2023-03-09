@@ -1,0 +1,76 @@
+/* Hero Section Grid */
+.heroSectionContainer {
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "text image";
+}
+
+    .textHeroContainer {
+        display: grid;
+        grid-column: 1;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    
+        .h1HeroSection {
+            place-self: center left;
+            font-family: 'JetBrains Mono', monospace;
+            color: #ebebeb;
+            font-size: 36px;
+            margin-bottom: 5%;
+        }
+
+        .pHeroSection {
+            place-self: center left;
+            font-family: 'Montserrat', sans-serif;
+            color: #ebebeb;
+            font-size: 20px;
+            margin-top: 0px;
+            margin-bottom: 5%;
+        }
+
+        .contactButtonFilled {
+            background-color: #EA1888;
+            border-color: #EA1888;
+            border-style: solid;
+            border-width: 3px;
+            color: #ebebeb;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px 0px;
+        }
+
+            .contactButtonFilled:hover {
+                background-color: transparent;
+                border-color: #EA1888;
+                border-style: solid;
+                border-width: 3px;
+                color: #ebebeb;
+                font-family: 'JetBrains Mono', monospace;
+                font-size: 20px;
+                text-decoration: none;
+                text-align: center;
+                padding: 15px 0px;
+            }
+
+    .imgHero {
+        grid-column: 2;
+        place-self: center right;
+        margin-top: 15%;
+    }
+
+    .downArroyButton {
+        grid-column: 1/3;
+        place-self: center;
+        border-radius: 150px;
+        background-color: #373737;
+        text-decoration: none;
+        font-size: 50px;
+        padding: 5px 20px;
+        margin-top: 30px;
+    }

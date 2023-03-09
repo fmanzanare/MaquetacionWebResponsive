@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio - Fernando Manzanares</title>
+        <!-- Fav Icon -->
+        <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/fontsStyleSheet.css">
+        <link rel="stylesheet" href="./css/globalCSS.css">
+        <link rel="stylesheet" href="./css/headerGridCSS.css">
+        <link rel="stylesheet" href="./css/projectsSectionGridCSS.css">
+        <link rel="stylesheet" href="./css/footerSectionGridCSS.css">
+        <!-- Google Fonts: Icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <!-- Google Fonts: Fuentes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+
+    <body style="background-color: #111113;">
+        <!-- Return to Top Arrow -->
+        <button class="returnTop">
+            <a href="#top">
+                <span class="material-symbols-outlined" style="color: #EBEBEB; font-variation-settings: 'wght' 500;">
+                    arrow_upward
+                </span>
+            </a>
+        </button>
+        <!-- Full Header -->
+        <div class="fixedHeader">
+             <!-- Over Header -->
+             <div class="mainContainer">
+                <div class="overHeaderContainer">
+                    <p class="emailOverHeader">
+                        <span class="material-symbols-outlined" style="vertical-align: middle;">
+                            mail
+                        </span>
+                        <a href="mailto:fernando@msqr.dev" class="overHeaderLinks">
+                            fernando@msqr.dev
+                        </a>
+                    </p>
+                    <p class="tlfOverHeader">
+                        <span class="material-symbols-outlined" style="vertical-align: middle;">
+                            call
+                        </span>
+                        <a href="tel:+34654608086" class="overHeaderLinks">
+                            +34 654 60 80 86
+                        </a>
+                    </p>
+                </div>    
+            </div>
+            <hr style="margin-left: 20%; margin-right: 20%; margin-top: 0%;">
+            <!-- Header -->
+            <div class="mainContainer">
+                <div class="headerContainer">
+                    <a href="../Homepage/home.html" style="place-self: center left;">
+                        <img class="headerLogoItem" src="./img/LOGO-LARGO-BLANCO.png">
+                    </a>
+                    <div class="headerNavBar">
+                        <div class="sobreMiLinkSection">
+                            <a href="../SobreMi/sobreMi.html" class="sobreMiLink">Sobre Mí</a>
+                        </div>
+                        <div class="portfolioLinkSection">
+                            <a href="./portfolio.html" class="portfolioLink" style="color: #EA1888;">Portfolio</a>
+                        </div>
+                        <div class="contactButtonSection">
+                            <a href="../Contacto/contacto.html" style="text-decoration: none;">
+                                <p class="contactButton">Contacto</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Title Section -->
+        <div class="pageTitleSection">
+            <h1 class="h1PageTitleSection">
+                <center>
+                    <span style="color: #EA1888;">&#60;</span>
+                     PORTFOLIO 
+                    <span style="color: #EA1888;">&#62;</span>
+                </center>
+            </h1>
+        </div>
+        <div class="mainContainer">
+            <div style="grid-column: 1; grid-row: 1/4; ; border-right: 3px solid #EBEBEB;"></div>
+            <!-- PIPEX Project -->
+            <div class="projectsSectionContainer">
+                <div class="timeLineContainer">
+                    <p class="dotLines">--------</p>
+                    <p class="pTimeLine" style="margin-top: 0;">2022</p>
+                </div>
+                <a href="https://github.com/fmanzanare/42Cursus/tree/main/pipex" target="_blank">
+                    <img class="imgProject" src="./img/logo-pipex.jpg">
+                </a>
+                <div class="projectInfoContainer">
+                    <p class="pProjectTitle">
+                        PIPEX
+                    </p>
+                    <p class="pProjectSubtitle">
+                        Tan útil como el "|" pipe nativo de shell, pero programado en C
+                    </p>
+                    <p class="pProjectText">
+                        Este proyecto pertenece al Cursus del campus de programación 42 Málaga.
+                        <br><br>
+                        Consiste en desarrollar el famoso pipe de shell, que permite concatenar comando en consola, pero programado en C.
+                        <br><br>
+                        El núcleo de este proyecto consiste en manejar adecuadamente los procesos.
+                    </p>
+                    <p class="pProjectTechs">
+                        #C #Neovim #Makefile #Pipes #42Málaga
+                    </p>
+                </div>
+            </div>
+            <!-- So_long Project -->
+            <div class="projectsSectionContainer">
+                <div class="timeLineContainer">
+                    <p class="dotLines">--------</p>
+                    <p class="pTimeLine" style="margin-top: 0;">2022</p>
+                </div>
+                <a href="https://github.com/fmanzanare/42Cursus/tree/main/so_long" target="_blank">
+                    <img class="imgProject" src="./img/logo-so_long.jpg">
+                </a>
+                <div class="projectInfoContainer">
+                    <p class="pProjectTitle">
+                        SO_LONG
+                    </p>
+                    <p class="pProjectSubtitle">
+                        Conviértete en un Vikingo, recoge Hachas y entra al Valhalla
+                    </p>
+                    <p class="pProjectText">
+                        Este proyecto pertenece al Cursus del campus de programación 42 Málaga.
+                        <br><br>
+                        Consiste en el desarrollo de un pequeño videojuego usando la librería MiniLIBX.
+                        <br>
+                        Los sprites del juego son de desarrollo propio.
+                        <br><br>
+                        Está programado para correr en Mac, ya que es el entorno de desarrollo de 42.
+                    </p>
+                    <p class="pProjectTechs">
+                        #C #Makefile #Neovim #Videojuegos #MiniLIBX #42Málaga
+                    </p>
+                </div>
+            </div>
+            <!-- Kokoro Project -->
+            <div class="projectsSectionContainer">
+                <div class="timeLineContainer">
+                    <p class="dotLines">--------</p>
+                    <p class="pTimeLine" style="margin-top: 0;">2021</p>
+                </div>
+                <a href="https://kokorobar.es/" target="_blank">
+                    <img class="imgProject" src="./img/logo-kokoro.jpg">
+                </a>
+                <div class="projectInfoContainer">
+                    <p class="pProjectTitle">
+                        KOKORO Soul Bar
+                    </p>
+                    <p class="pProjectSubtitle">
+                        Un bar con alma underground y tres corazones
+                    </p>
+                    <p class="pProjectText">
+                        Este proyecto pertenece al Cursus del campus de programación 42 Málaga.
+                        <br><br>
+                        Consiste en el desarrollo de un pequeño videojuego usando la librería MiniLIBX.
+                        <br>
+                        Los sprites del juego son de desarrollo propio.
+                        <br><br>
+                        Está programado para correr en Mac, ya que es el entorno de desarrollo de 42.
+                    </p>
+                    <p class="pProjectTechs">
+                        #C #Makefile #Neovim #Videojuegos #MiniLIBX #42Málaga
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Over Footer Section: Contact Button -->
+        <div class="overFooterContainer">
+            <p class="pOverFooter">
+                ¿Hablamos?
+            </p>
+            <a href="../Contacto/contacto.html" style="text-decoration: none; grid-column: 2; grid-row: 2;">
+                <p class="contactaConmigoButton">¡Contacta Conmigo!</p>
+            </a>
+        </div>
+        <!-- Footer Section -->
+        <div class="footerContainer">
+            <div class="footerLeftSection">
+                <img style="grid-row: 1; width: 50%; margin-top: 8%;" src="./img/LOGO-LARGO-NEGRO.png">
+                <p class="pFooterSubtitleLeftSection">Software Developer</p>
+                <p class="pFooterLeftSection">
+                    Apasionado del código, el aprendizaje<br>
+                    contínuo y las cosas bien hechas.
+                </p>
+            </div>
+            <div class="footerMiddleSection">
+                <img style="grid-row: 1; margin-top: 0;" src="./img/force-gif-without-bg.gif">
+                <p class="pFooterMiddleSection">
+                    &#60; May the <span style="color: #EA1888;">code</span> be with you &#62;
+                </p>
+            </div>
+            <div class="footerRightSection">
+                <a href="https://github.com/fmanzanare" target="_blank" style="text-decoration: none; grid-column: 1; margin-right: 15%;">
+                    <img style="width: 100%;" src="./img/github-logo.png">   
+                </a>
+                <a href="https://www.linkedin.com/in/fernandomanzanaresmontes/" target="_blank" style="text-decoration: none; grid-column: 2;">
+                    <img style="width: 100%;" src="./img/linkedin-logo.png">
+                </a>
+            </div>
+            <p class="pLegalInfo">&#169; 2022 - Fernando Manzanares Montes</p>
+        </div>
+    </body>
+
+</html>

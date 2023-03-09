@@ -1,0 +1,130 @@
+/* Projects Section Grid Template */
+.projectsSectionContainer {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+    .timeLineContainer {
+        grid-column: 1;
+        display: grid;
+        grid-template-rows: auto auto;
+        place-self: center left;
+        margin-left: 0;
+    }
+
+        .dotLines {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 20px;
+            font-weight: bold;
+            color: #EA1888;
+            place-self: center left;
+            margin-bottom: 0;
+        }   
+
+        .pTimeLine {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 20px;
+            color: #ebebeb;
+            place-self: center right;
+        }
+    
+    .imgProject {
+        grid-column: 2;
+        place-self: center;
+        padding-left: 5%;
+    }
+
+    .projectInfoContainer {
+        grid-column: 3;
+        display: grid;
+        grid-template-rows: auto auto auto 1fr;
+        padding-left: 5%;
+    }
+
+        .pProjectTitle {
+            grid-row: 1;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 32px;
+            font-weight: bold;
+            color: #ebebeb;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .pProjectSubtitle {
+            grid-row: 2;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
+            font-style: italic;
+            color: #ebebeb;
+            margin-bottom: 0;
+        }
+
+        .pProjectText {
+            grid-row: 3;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            color: #ebebeb;
+            margin-bottom: 0;
+        }
+
+        .pProjectTechs {
+            grid-row: 4;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 15px;
+            color: #ebebeb;
+        }
+
+    .overFooterContainer {
+        display: grid;
+        background-color: #373737;
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-rows: auto auto;
+        place-items: center;
+        margin-top: 0;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+        .pOverFooter {
+            grid-column: 2;
+            grid-row: 1;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            color: #ebebeb;
+            margin-top: 0;
+        }
+
+        .contactaConmigoButton {
+            place-self: center;
+            background-color: #EA1888;
+            border-color: #EA1888;
+            border-style: solid;
+            border-width: 3px;
+            color: #ebebeb;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px 50px;
+            margin: 0;
+        }
+
+        .contactaConmigoButton:hover {
+            background-color: transparent;
+            border-color: #EA1888;
+            border-style: solid;
+            border-width: 3px;
+            color: #ebebeb;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px 50px;
+        }
